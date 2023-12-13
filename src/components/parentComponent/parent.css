@@ -1,0 +1,10 @@
+.parent-container{
+    display: flex;
+    flex-direction: column;
+}
+.parent{
+    background-color: lawngreen;
+    height: 50vh;
+    
+    padding: 8% 40px;
+}
