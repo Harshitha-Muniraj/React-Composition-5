@@ -1,10 +1,14 @@
-.inp{
-    outline: none;
-    border: 2px solid blue;
-    height: 30px;
-    border-radius: 4px;
-}
+
 .children{
     background-color: darkorange;
     padding: 21px 8px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.btn{
+    width: 60px;
+    height: 25px;
 }
