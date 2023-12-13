@@ -2,14 +2,7 @@ import React, { useState } from 'react'
 import Child from '../childComponent/Child';
 import './parent.css';
 
-// let items=JSON.parse(localStorage.getItem(items))
-// const list=(items)=>{
-//   console.log(items)
-//   if(items){
-//     return items
-//   }else{
-//     return []
-//   }
+
 
 const Parent = () => {
     const [inputState,SetInputState]=useState('');
@@ -20,16 +13,14 @@ const Parent = () => {
     function updateInp(e){
      
       SetInputState({...inputState,[e.target.name]:e.target.value});
-      
-      // localStorage.setItem("input","inputState");
-      // kk
+     
     }
     
     function displayItem(e){
       e.preventDefault();
       console.log(inputState)
       SetItemList([...itemList,inputState])
-      // localStorage.setItem('items', JSON.stringify(itemList));
+    
       SetInputState({itemName:'',itemPrice:''})
     }
   return (
