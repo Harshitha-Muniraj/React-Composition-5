@@ -6,8 +6,8 @@ const Parent = () => {
   return (
     <>
     <h1>Parent Component</h1>
-    {login?<h2>Login Successful</h2>:null}
-    {login?null:<Child SetLogin={SetLogin} />}
+    {login?<h2>Login Successful</h2>:<Child SetLogin={SetLogin} />}
+    
     </>
   )
 }
