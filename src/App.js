@@ -1,10 +1,10 @@
 
-import Parent from './components/parentComponent/Parent';
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <>
-    <Parent/>
+    <SignUp/>
     </>
   );
 }
