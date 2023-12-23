@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Child from '../childComponent/Child';
 
 const Parent = () => {
-  const [login,SetLogin]=useState(false)
+  const todos=[{name:"Learn React",status:"Complete"},{name:"Build a React App",status:"Complete"},{name:"Deploy React App",status:"Complete"}]
+  const [items,SetItem]=useState(todos)
   return (
     <>
     <h1>Parent Component</h1>
-    {login?<h2>Login Successful</h2>:<Child SetLogin={SetLogin} />}
-    
+    <Child items={items} SetItem={SetItem}/>
     </>
   )
 }
